@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.display{
+    border: 1px solid gray;
+}
+.study{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    
+}
+.study li{
+    display: inline-block;
+    width: 100px;
+}
+.container{
+    display: flex;
+}
+.container img{
+    width: 400px;
+}
+

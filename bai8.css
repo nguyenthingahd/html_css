@@ -1,0 +1,15 @@
+img{
+    width: 500px;
+    height: 400px;
+}
+.title{
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 480px;
+    height: 50px;
+    position: absolute;
+    top:250px;
+    background-color: rgb(51, 51, 39);
+    opacity: 0.6;
+}

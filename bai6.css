@@ -1,0 +1,25 @@
+.container{
+    width: 300px;
+    border-top: 1px solid black;
+}
+img{
+    width: 280px;
+    border: 2px solid gray;
+}
+ul{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+.content{
+    padding: 10px;
+}
+.content1{
+    color: blue;
+    background-color: rgb(172, 165, 165);
+    margin-bottom: 10px;
+}
+.content2{
+    color: rgb(191, 31, 31);
+    background-color: rgb(172, 165, 165);
+    margin-bottom: 10px;
+}

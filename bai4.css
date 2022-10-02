@@ -1,0 +1,39 @@
+.tinhot{
+    width: 500px;
+    border: 1px solid rgb(151, 147, 147);
+    border-radius: 10px;
+}
+.bai4 div{
+    border-bottom: 1px solid rgb(151, 147, 147);
+}
+.tinhot h3{
+    color:red;
+    padding-left: 20px;
+}
+.noidung{
+    font-weight: bold;
+   
+}
+.thoigian{
+    font-size: small;
+    color: grey;
+}
+.bllt{
+    color: red;
+    font-size: small;
+}
+.diadiem{
+    color: grey;
+    font-size: small;
+    background-color: rgba(230, 230, 201, 0.778);
+}
+.tinhot h3{
+    border-bottom: 1px solid rgb(151, 147, 147);
+}
+.bai4{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div p span{
+    margin: 0 10px;
+}
