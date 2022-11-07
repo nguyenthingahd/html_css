@@ -1,0 +1,47 @@
+.header {
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    padding-left: -10px;
+  }
+  .box {
+    padding: 2px;
+    background-color: rgb(177, 177, 177);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+  }
+
+  .h4 {
+    color: gray;
+  }
+  .box-hover {
+    border: 0px solid #ccc;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    padding-left: 100px;
+  }
+  .box-hover img {
+    max-width: 100%;
+    transition: all 1s;
+  }
+
+  .box-hover .img-change {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .box-hover:hover .img-change {
+    opacity: 0;
+  }
+  p {
+    text-align: center;
+    padding-left: 10px;
+  }
+  .box-hover a {
+    text-decoration: none;
+    padding-left: 60px;
+    font-size: 15px;
+    color: black;
+  }

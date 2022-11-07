@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai tap</title>
+    <style>
+    .images img{
+        width: 100px; 
+        cursor: pointer;
+        border: 2px solid red;
+        margin-right: 5px;
+    }
+    .images{
+        display: flex;
+        justify-content: center;
+    }
+    .bg_lighbox{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background-color: #000;
+        opacity: 0.5;
+    }
+    .img_lighbox{
+        width: 60vw;
+        position: fixed;
+        left: 20vw;
+        height: 60vh;
+        top: 20vh;
+    }
+      #chatbox{
+        width: 200px;
+        background-color:greenyellow;
+        color: #fff;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        border-top-left-radius: 20px;
+        padding-left: 10px;
+      }
+      #chatbox h1{
+        cursor: pointer;
+      }
+      .close form{
+        display: none;
+      }
+      .open form{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="box" src="https://cafeauto.vn/image-data/800-450/static1.cafeland.vn/cafeauto/imagedata/hinhanh/xetheohang/2018/01/tuan-02/ngamsieubolamborghiniaventadorsdocnhatvietnam50tydong/ngam-sieu-bo-lamborghini-aventador-s-doc-nhat-viet-nam-50-ty-dong-1516017270.jpg" alt="">
+
+    <div class="bg_lighbox" onclick="display()" style="display: none;"></div>
+    
+    <img class="img_lighbox"  style="display: none;" src="" alt="">
+    
+    <div class="images">
+        <img onclick="display(this.src)" src="https://cafeauto.vn/image-data/800-450/static1.cafeland.vn/cafeauto/imagedata/hinhanh/xetheohang/2018/01/tuan-02/ngamsieubolamborghiniaventadorsdocnhatvietnam50tydong/ngam-sieu-bo-lamborghini-aventador-s-doc-nhat-viet-nam-50-ty-dong-1516017270.jpg" alt="">
+        <img onclick="display(this.src)" src="https://img.tinxe.vn/crop/730x408/2020/06/03/95ywCUPr/avatar-2788.jpg" alt="">
+    <script>
+        // function zoomout(src_img){
+        //     document.querySelector(".img_lighbox").src = src_img;
+        //     document.querySelector(".img_lighbox").style.display = "block";
+        //     document.querySelector(".bg_lighbox").style.display = "block";
+        // }
+        // function zoomin(){
+        //     document.querySelector(".img_lighbox").style.display = "none";
+        //     document.querySelector(".bg_lighbox").style.display = "none";
+        // }
+        function display(src_img){
+            document.querySelector(".box").src = src_img;
+        }
+        
+    </script>
+    <input type="range" min="1" max="4" value="1" step="0.1" id="zoomer" oninput="deepdive()">
+  <div id="chatbox" class="close">
+    
+    <h1 onclick="toggle()">Chat with me</h1>
+    <form action="">
+        <input type="text" placeholder="Họ và tên"> <br/><br>
+        <textarea
+          placeholder="Nội dung chat" id="" cols="30"
+        ></textarea>  
+    </form>
+    <script>
+        function toggle() {
+            
+            chatbox = document.getElementById("chatbox");
+            if(chatbox.className =="close"){
+                chatbox.className ="open"
+            }else{
+                chatbox.className ="close"
+            }    
+        }
+      </script>
+  </div>
+</html>

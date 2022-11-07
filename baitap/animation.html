@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @keyframes myaction {
+        0% {
+          background-color: blue;
+          top: 0;
+          left: 50%;
+        }
+
+        25% {
+          background-color: yellow;
+          left: calc(100% - 50px);
+          top: 50%;
+        }
+        50% {
+          background-color: green;
+          top: calc(100% - 50px);
+          left: 50%;
+        }
+        75% {
+          background-color: red;
+          left: 0;
+          top: 50%;
+        }
+
+        100% {
+          background-color: blue;
+          top: 0;
+          left: 50%;
+        }
+      }
+      .mybox {
+        position: absolute;
+        top: 0;
+        left: 200px;
+        width: 50px;
+        height: 50px;
+        background-color: rgb(4, 0, 255);
+        border-radius: 50%;
+        animation: myaction 8s infinite;
+        animation-timing-function: linear;
+      }
+      .mybox1 {
+        animation-delay: 0.1s;
+      }
+      .mybox2 {
+        animation-delay: 0.2s;
+      }
+      .mybox3 {
+        animation-delay: 0.3s;
+      }
+      .mybox4 {
+        animation-delay: 0.4s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mybox"></div>
+
+    <div class="mybox mybox1"></div>
+    <div class="mybox mybox2"></div>
+    <div class="mybox mybox3"></div>
+    <div class="mybox mybox4"></div>
+  </body>
+</html>

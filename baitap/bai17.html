@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai 17</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 17px;
+      }
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+      }
+      .form-group {
+        margin-bottom: 15px;
+        position: relative;
+      }
+      input {
+        height: 50px;
+        width: 300px;
+        outline: none;
+        border: 1px solid #dadce0;
+        padding: 10px;
+        border-radius: 5px;
+        color: #202124;
+        transition: all 0.3s ease-in-out;
+      }
+      label {
+        position: absolute;
+        padding: 0px 5px;
+        left: 5px;
+        top: 50%;
+        color: gray;
+        pointer-events: none;
+        transform: translateY(-50%);
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+      }
+      .form-group input:focus {
+        border: 2px solid #1a73e8;
+      }
+      .form-group input:focus + label,
+      .form-group input:valid + label {
+        top: 0px;
+        font-size: 13px;
+        color: #1a73e8;
+      }
+      a {
+        text-decoration: none;
+        color: #1a73e8;
+        font-weight: bold;
+      }
+    </style>
+    <div class="wrapper">
+      <form action="">
+        <div class="form-group">
+          <input placeholder=" " type="text" name="email" required />
+          <label>Email hoặc số điện thoại</label>
+        </div>
+        <a href="#">Bạn quên địa chỉ email?</a>
+      </form>
+    </div>
+  </body>
+</html>
